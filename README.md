@@ -33,7 +33,7 @@ Compose to set up and run WordPress. Before starting, make sure you have
 
     ```yaml
     services:
-      db:
+    db:
     # We use a mariadb image which supports both amd64 & arm64 architecture
     #image: mariadb:10.6.4-focal
     # If you really want to use MySQL, uncomment the following line
@@ -53,7 +53,7 @@ Compose to set up and run WordPress. Before starting, make sure you have
 
 
 
-      wordpress:
+    wordpress:
     image: registry.docker.ir/wordpress:latest
     volumes:
       - wp_data:/var/www/html
@@ -70,6 +70,8 @@ Compose to set up and run WordPress. Before starting, make sure you have
       wp_data:
 
 
+    
+ 
    > **Notes**:
    >
    * The docker volumes `db_data` and `wordpress_data` persists updates made by WordPress
