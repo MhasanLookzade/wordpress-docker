@@ -53,7 +53,7 @@ Compose to set up and run WordPress. Before starting, make sure you have
 
 
 
-  wordpress:
+      wordpress:
     image: registry.docker.ir/wordpress:latest
     volumes:
       - wp_data:/var/www/html
@@ -65,9 +65,9 @@ Compose to set up and run WordPress. Before starting, make sure you have
       - WORDPRESS_DB_USER=wordpress
       - WORDPRESS_DB_PASSWORD=password
       - WORDPRESS_DB_NAME=wordpress
-volumes:
-  db_data:
-  wp_data:
+    volumes:
+      db_data:
+      wp_data:
 
 
    > **Notes**:
